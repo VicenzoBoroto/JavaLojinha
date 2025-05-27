@@ -11,6 +11,12 @@ public class Produto {
     private Tamanho tamanho;
     private List<String> itensInclusos;
 
+    public Produto(String marcaInicial, Tamanho tamanhoInicial) {
+        // Definir comandos que serão iniciados durante a instanciacao
+        this.marca = marcaInicial;
+        this.tamanho = tamanhoInicial;
+    }
+
     public double getValor() {
         return this.valor;
     }
