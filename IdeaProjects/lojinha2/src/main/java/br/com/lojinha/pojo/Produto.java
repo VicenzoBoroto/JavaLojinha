@@ -9,7 +9,7 @@ public class Produto {
     private String marca;
     private double valor;
     private Tamanho tamanho;
-    private List<String> itensInclusos;
+    private List<Adicional> itensInclusos;
 
     public Produto(String marcaInicial, Tamanho tamanhoInicial) {
         // Definir comandos que serão iniciados durante a instanciacao
@@ -53,11 +53,11 @@ public class Produto {
         this.tamanho = novoTamanho;
     }
 
-    public List<String> getItensInclusos() {
+    public List<Adicional> getItensInclusos() {
         return this.itensInclusos;
     }
 
-    public void setItensInclusos(List<String> novosItens) {
+    public void setItensInclusos(List<Adicional> novosItens) {
         this.itensInclusos = novosItens;
     }
 }
